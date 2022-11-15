@@ -12,7 +12,6 @@ for (var i in array) {
         cannotJump = false;
     }
 }
-
 jumps = (cannotJump) ? -1 : jumps;
 
 console.log(jumps);
