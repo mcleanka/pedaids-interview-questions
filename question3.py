@@ -1,6 +1,3 @@
-from random import choice
-
-
 def isBinaryStrings(n, b, syms="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"):
     return ((n == 0) and syms[0]) or (
         isBinaryStrings(n//b, b, syms).lstrip(syms[0]) + syms[n % b])
