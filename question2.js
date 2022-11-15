@@ -3,11 +3,6 @@ var jumps = 0;
 var jumpIndex = 0;
 var cannotJump = true;
 
-function getJumps(arr, startingIndex) {
-    return (jumps > 0) ? jumps : -1;
-}
-
-
 for (var i in array) {
     if (jumpIndex < array.length || jumpIndex < 0) {
         var v = array[jumpIndex];
@@ -17,6 +12,7 @@ for (var i in array) {
         cannotJump = false;
     }
 }
+
 jumps = (cannotJump) ? -1 : jumps;
 
 console.log(jumps);
